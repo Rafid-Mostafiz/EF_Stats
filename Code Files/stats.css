@@ -1,0 +1,138 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('Images/allianz_arena_2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.filters-section {
+    width: 20%;
+    background-color: rgba(255, 215, 0, 0.8); /* Yellow box */
+    padding: 20px;
+    position: fixed;
+    top: 20%;
+    left: 2%; /* Moved more to the left */
+    height: auto;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+.filters-section h2 {
+    text-align: center;
+    color: #333;
+}
+
+.filter-group {
+    margin-bottom: 15px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.filter-group select,
+.filter-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 46%;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #555;
+}
+
+.clear-btn {
+    background-color: red;
+}
+/* Player Section Styling */
+.players-section {
+    width: 70%; /* Reduce the overall width */
+    margin-left: 30%;
+    padding-right: 5%; /* Add some padding on the right */
+}
+
+.players-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: rgb(255, 1, 1); /* Bold yellow text */
+    font-weight: bold;
+}
+
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 players per row */
+    grid-gap: 20px; /* Increased gap between player cards for spacing */
+    margin-right: 20px; /* Adds some space to the right of the grid */
+}
+
+.player-card {
+    background-color: rgba(0, 0, 0, 0.6); /* Black transparent background */
+    padding: 8px; /* Further reduced padding */
+    border-radius: 8px; /* Smaller rounded corners */
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 80%; /* Reduce the width of player cards */
+}
+
+.player-card:hover {
+    transform: translateY(-5px);
+}
+
+.player-image {
+    width: 85%; /* Smaller image */
+    height: auto;
+}
+
+.player-card a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Ensure the color remains as it is */
+}
+
+.player-card a h2 {
+    margin: 8px 0 0;
+    font-size: 20px; /* Further reduced font size */
+    color: #ffcc00; /* Bold yellow text for player name and stats */
+    font-weight: bold;
+    text-decoration: none; /* Ensure no underline on h2 inside a */
+    border-bottom: none;
+    box-shadow: none;
+}
+
+.no-results {
+    text-align: center;
+    font-size: 18px;
+    color: #ff4444;
+}

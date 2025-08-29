@@ -1,0 +1,141 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('Images/anfield.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #f0f8ff;
+    position: relative;
+    color: #fff;
+}
+/* Player Grid Section */
+/* Player Grid Section */
+.player-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.container {
+    padding-left: 40px; /* Adjust left padding for even more space */
+    padding-right: 40px;
+}
+
+/* Player Card */
+.player-card {
+    flex: 0 0 18%; /* Each player will take 18% of the row, allowing 5 per row */
+    max-width: 18%;
+    margin-bottom: 30px;
+}
+
+.player-block img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Ensure image height doesn't overflow */
+    object-fit: contain; /* Keep the aspect ratio intact */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.player-card:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+.player-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffcc00;
+    text-decoration: none; /* Remove the blue line */
+}
+
+/* Role Filter Section */
+.filter-section {
+    margin: 40px 0;
+}
+
+.filter-section .btn {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+   
+}
+
+.filter-section .btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.filter-section .btn-secondary {
+    background-color: #fff;
+    color: #007bff;
+    border: none; /* Remove black border */
+}
+
+
+.filter-section .btn-primary:hover, .filter-section .btn-secondary:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Go Back Button Alignment */
+.go-back-btn-container {
+    position: absolute; /* Position the container absolutely */
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    text-align: left; /* Align text to the left */
+}
+
+.go-back-btn, .go-back-btn2 {
+    display: inline-block; /* Display buttons side by side */
+    margin-right: 10px; /* Add space between buttons */
+    background-color: #ffcc00; /* Same background color */
+    color: #000; /* Same text color */
+    border: 1px solid #000; /* Adjusted border for consistency */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Font size */
+}
+
+/* Hover Effects */
+.go-back-btn:hover, .go-back-btn2:hover {
+    background-color: #ffc107; /* Change background color on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Player Block Styles */
+.player-block a {
+    text-decoration: none; /* Remove blue underline */
+}
+
+/* Player Grid Layout */
+.player-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Container Style */
+.container.my-3 {
+    padding-left: 0; /* Push the 'Go Back' button even more to the left */
+}
+
+/* Additional Styles for Buttons */
+.btn-light {
+    background-color: #ffcc00; /* Background color */
+    color: #000; /* Text color */
+    border: 1px solid #000; /* Border color */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
+}
+
+/* Hover state for .btn-light */
+.btn-light:hover {
+    background-color: #ffc107; /* Hover background color */
+    transform: scale(1.05); /* Hover scale effect */
+}
